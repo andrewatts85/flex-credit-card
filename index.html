@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Credit Card From</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+<form id="creditCardForm" action="#" method="post">
+  <div class="row header">
+    <div class="col">
+      <h4>Payment Details</h4> 
+    </div>  
+    <div class="col" id="submit">
+      <input type="submit" />
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="col">
+      <label for="number">Card Number</label>
+      <input type="password" id="number" />
+    </div>
+  </div>
+  <!-- row -->
+
+  <div class="row middle">
+    <div class="col">
+      <label for="month">Month</label>
+      <select id="month">
+        <option></option>
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option>04</option>
+        <option>05</option>
+        <option>06</option>
+        <option>07</option>
+        <option>08</option>
+        <option>09</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+    </div>
+
+    <div class="col">
+      <label for="year">Year</label>
+      <select id="year">
+        <option></option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+        <option>2026</option>
+        <option>2027</option>
+        <option>2028</option>
+        <option>2029</option>
+        <option>2030</option>
+        <option>2031</option>
+        <option>2032</option>
+      </select>
+    </div>
+
+    <div class="col">
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc"/>
+    </div>
+
+    <div class="col">
+      <br>
+      <img src="http://www.credit-card-logos.com/images/visa_credit-card-logos/visa_logo_2.gif" />
+    </div>
+
+  </div>
+  <!-- row -->
+
+  <div class="row">
+    <div class="col">
+      <label for="name">Cardholder Name</label>
+      <input type="text" id="name"/>
+    </div>
+  </div>
+  <!-- row -->
+</form>
+  
+    <script src="validator.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
