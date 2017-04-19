@@ -1,0 +1,85 @@
+/* use w/ css reset normalize */
+/* grid engine */
+
+/* mobile first approach w/ stacking columns */
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+}
+
+.col {
+  flex: 1;
+}
+
+body {
+  padding: 1em;
+}
+
+/* devices 500px wide or more */
+@media screen and (min-width: 400px) {
+	.row {
+    flex-direction: row;
+  }
+  
+  .middle .col:nth-child(1), .middle .col:nth-child(2), .middle .col:nth-child(3) {
+    padding: 0 .5em 0 0;
+    flex-grow: 2;
+  }
+  
+  .middle .col:nth-child(4) {
+    flex-grow: 1;
+  }
+  
+  #submit {
+    align-self: center;
+  }
+}
+
+/* form */
+form {
+  border: .063em solid lightgray;
+  max-width: 25em;
+  margin: 6% auto;
+  border-radius: 0.375em;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #018FFD;
+  color: white;
+  border-radius: .375em .375em 0 0;
+}
+
+input[type="submit"] {
+  background-color: #fd9c01;
+  color: white;
+  width: 100%;
+  border: .063em solid;
+  padding: .5em 0;
+}
+
+input, select {
+  width: 100%;
+  height: 2.25em;
+  box-sizing: border-box;
+  border: .063em solid lightgray;
+}
+
+#number, #cvc, #name {
+  padding: 0 .3em;
+}
+
+label {
+  font-size: small;
+  font-weight: bold;
+  color: gray;
+}
+
+.invalid { 
+  border: .063em solid red;
+}
+
+.valid {
+  border: .063em solid lightgreen;
+}
